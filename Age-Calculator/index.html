@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="dark.css" id="theme">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header-container">
+                <h1 id="toast">Age Calculator</h1>
+                <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster" style="margin-left: 110px;">
+                  <div class="wheel"></div>
+                  <div class="hamster" >
+                    <div class="hamster__body">
+                      <div class="hamster__head">
+                        <div class="hamster__ear"></div>
+                        <div class="hamster__eye"></div>
+                        <div class="hamster__nose"></div>
+                      </div>
+                      <div class="hamster__limb hamster__limb--fr"></div>
+                      <div class="hamster__limb hamster__limb--fl"></div>
+                      <div class="hamster__limb hamster__limb--br"></div>
+                      <div class="hamster__limb hamster__limb--bl"></div>
+                      <div class="hamster__tail"></div>
+                    </div>
+                  </div>
+                  <div class="spoke"></div>
+                </div>
+                <div class="top-buttons">
+                    <button type="button" onclick="changeTheme()" class="theme-button">
+                      
+                        <img src="SunIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Input Fields for Date -->
+            <div class="input-group">
+                <input type="text" id="day" placeholder="Day">
+                <input type="text" id="month" placeholder="Month">
+                <input type="text" id="year" placeholder="Year">
+            </div>
+
+            <!-- Buttons -->
+            <div class="first-row">
+              <button type="button" id="calculate-age" class="btn">
+                  <strong>CALCULATE AGE</strong>
+                  <div id="container-stars">
+                      <div id="stars"></div>
+                  </div>
+                  <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                  </div>
+              </button>
+          </div>
+
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
